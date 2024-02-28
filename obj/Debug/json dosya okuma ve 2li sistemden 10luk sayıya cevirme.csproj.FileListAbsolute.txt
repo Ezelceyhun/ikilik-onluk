@@ -1,0 +1,29 @@
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.exe.config
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.exe
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.pdb
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\Antlr3.Runtime.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\Newtonsoft.Json.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.Helpers.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.Razor.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.WebPages.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\WebGrease.dll
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\Antlr3.Runtime.pdb
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\Newtonsoft.Json.xml
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.Helpers.xml
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.Razor.xml
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.WebPages.xml
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.csproj.AssemblyReference.cache
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.csproj.SuggestedBindingRedirects.cache
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.exe.config
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme.Form1.resources
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme.Properties.Resources.resources
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.csproj.GenerateResource.cache
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.csproj.CoreCompileInputs.cache
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dos.9B065041.Up2Date
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.exe
+C:\Users\ezelc\Desktop\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\obj\Debug\json dosya okuma ve 2li sistemden 10luk sayıya cevirme.pdb
