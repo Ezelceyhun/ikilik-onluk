@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.formId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.formName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.readAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.writeAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,6 +37,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.formId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.readAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.writeAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,39 +62,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(646, 527);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // formId
-            // 
-            this.formId.HeaderText = "formId";
-            this.formId.MinimumWidth = 6;
-            this.formId.Name = "formId";
-            this.formId.ReadOnly = true;
-            this.formId.Visible = false;
-            this.formId.Width = 125;
-            // 
-            // formName
-            // 
-            this.formName.HeaderText = "Form Adı";
-            this.formName.MinimumWidth = 6;
-            this.formName.Name = "formName";
-            this.formName.ReadOnly = true;
-            this.formName.Width = 125;
-            // 
-            // readAccess
-            // 
-            this.readAccess.HeaderText = "Okuma Yetkisi";
-            this.readAccess.MinimumWidth = 6;
-            this.readAccess.Name = "readAccess";
-            this.readAccess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.readAccess.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.readAccess.Width = 125;
-            // 
-            // writeAccess
-            // 
-            this.writeAccess.HeaderText = "Yazma Yetkisi";
-            this.writeAccess.MinimumWidth = 6;
-            this.writeAccess.Name = "writeAccess";
-            this.writeAccess.Width = 125;
             // 
             // button1
             // 
@@ -172,11 +140,54 @@
             this.label6.Size = new System.Drawing.Size(0, 25);
             this.label6.TabIndex = 12;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label7.Location = new System.Drawing.Point(750, 443);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(293, 25);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Tek Bir Sütunda Seçim Yapınız !";
+            // 
+            // formId
+            // 
+            this.formId.HeaderText = "formId";
+            this.formId.MinimumWidth = 6;
+            this.formId.Name = "formId";
+            this.formId.ReadOnly = true;
+            this.formId.Width = 125;
+            // 
+            // formName
+            // 
+            this.formName.HeaderText = "Form Adı";
+            this.formName.MinimumWidth = 6;
+            this.formName.Name = "formName";
+            this.formName.ReadOnly = true;
+            this.formName.Width = 125;
+            // 
+            // readAccess
+            // 
+            this.readAccess.HeaderText = "Okuma Yetkisi";
+            this.readAccess.MinimumWidth = 6;
+            this.readAccess.Name = "readAccess";
+            this.readAccess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.readAccess.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.readAccess.Width = 125;
+            // 
+            // writeAccess
+            // 
+            this.writeAccess.HeaderText = "Yazma Yetkisi";
+            this.writeAccess.MinimumWidth = 6;
+            this.writeAccess.Name = "writeAccess";
+            this.writeAccess.Width = 125;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 551);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -206,6 +217,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewTextBoxColumn formId;
         private System.Windows.Forms.DataGridViewTextBoxColumn formName;
         private System.Windows.Forms.DataGridViewCheckBoxColumn readAccess;

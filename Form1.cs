@@ -33,6 +33,7 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            label7.Hide();
             //debug klasörüne istenilen dosya eklenir
             string path = Application.StartupPath.ToString() + "\\Kitap1.json";
             List<Item> items = new List<Item>();
@@ -52,19 +53,27 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
         {
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-
-                if((bool)row.Cells["readAccess"].Value)
-                {
-                    //MessageBox.Show(row.Index.ToString());
-                    //seçili olanlara 1 ekle
-                    label1.Text += " "+ row.Index.ToString();
-                    label2.Text += 1.ToString();
-                }
-                else
-                {
-                    //seçili olmayanlara 0 ekle
-                    label2.Text += 0.ToString();
-                }      
+                    if ((bool)row.Cells["readAccess"].Value)
+                    {
+                        //seçili olanlara 1 ekle
+                        label1.Text += " " + row.Index.ToString();
+                        label2.Text += 1.ToString();
+                    }
+                    else if((bool)row.Cells["writeAccess"].Value)
+                    {
+                        label1.Text += " " + row.Index.ToString();
+                        label2.Text += 1.ToString();
+                    }
+                    else if ((bool)row.Cells["writeAccess"].Value && (bool)row.Cells["readAccess"].Value)
+                    {
+                        //her iki sütunda seçim yapıldıysa
+                        label7.Show();
+                    }
+                    else
+                    {
+                        //seçili olmayanlara 0 ekle
+                        label2.Text += 0.ToString();
+                    }
             }
         //sayıların ters yazımı
         string cevir="";
@@ -104,6 +113,25 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
             label1.Text = "";
             label2.Text = "";
             label6.Text = "";
+            //for ile satırları dolaşıp checked false çevirmesi
+
+            /*
+            for(int i =0; i<=28;i++)
+            {
+                DataGridViewCheckBoxCell never = dataGridView1.Rows[i].Cells[2] as DataGridViewCheckBoxCell;
+                DataGridViewCheckBoxCell once = dataGridView1.Rows[i].Cells[3] as DataGridViewCheckBoxCell;
+                bool isNeverChecked = (bool)never.EditedFormattedValue;
+                bool isOnceChecked = (bool)once.EditedFormattedValue;
+                if (isNeverChecked || isOnceChecked)
+                {
+                    once.Value = "false";
+                    never.Value = "false";
+                }
+            }
+            */
+
+            //tabloyu yenile
+            dataGridView1.Refresh();
         }
     }
 }
