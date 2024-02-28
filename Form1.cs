@@ -72,6 +72,7 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
         {
             cevir = label2.Text.Substring(a, 1) + cevir;
         }
+        label2.Text = cevir;
         //ikilikten onluk çevirme
         tekrar:
             string say = label2.Text;
