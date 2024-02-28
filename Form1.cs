@@ -158,14 +158,32 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
                 yazikalan = kalan.ToString() + yazikalan;
                 basamak.Add(kalan);
             }
-            label9.Text = yazikalan.ToString();
             textBox2.Text = yazikalan.ToString();
-            //    basamak.Reverse();
+            label9.Text = yazikalan.ToString();
+            //sayı ters çevir
+            string cevir = "";
+            string cevir2 = "";
+            for (int a = 0; a < textBox2.Text.Length; a++)
+            {
+                cevir = textBox2.Text.Substring(a, 1) + cevir;
+            }
+            for (int a = 0; a < label9.Text.Length; a++)
+            {
+                cevir2 = label9.Text.Substring(a, 1) + cevir2;
+            }
+            textBox2.Text = cevir.PadLeft(32, '0');
+            label9.Text = cevir2.PadLeft(32, '0');
+            cevir = "";
+            for (int a = 0; a < textBox2.Text.Length; a++)
+            {
+                cevir = textBox2.Text.Substring(a, 1) + cevir;
+            }
+            string yeni_cevir = cevir;
             foreach (int isim in basamak)
             {
-                int i;
+                
                 don:
-                    yer = textBox2.Text.ToUpper().IndexOf("1".ToUpper(), yer + 1);
+                    yer = yeni_cevir.ToUpper().IndexOf("1".ToUpper(), yer + 1);
                     
                     if (yer < 0)
                     {
