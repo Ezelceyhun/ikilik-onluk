@@ -31,12 +31,13 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
             public int yazma_yetkisi;
             public int okuma_yetkisi;
         }
-        //DataGridViewCheckBoxColumn checkColumn = new DataGridViewCheckBoxColumn();
         private void Form1_Load(object sender, EventArgs e)
         {
+            //debug klasörüne istenilen dosya eklenir
+            string path = Application.StartupPath.ToString() + "\\Kitap1.json";
             List<Item> items = new List<Item>();
 
-            using (StreamReader r = new StreamReader("C:\\Users\\ezelc\\Desktop\\json dosya okuma ve 2li sistemden 10luk sayıya cevirme\\Kitap1.json"))
+            using (StreamReader r = new StreamReader(path))
             {
                 string json = r.ReadToEnd();
                 items = JsonConvert.DeserializeObject<List<Item>>(json);
@@ -65,7 +66,13 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
                     label2.Text += 0.ToString();
                 }      
             }
-            //ikilikten onluk çevirme
+        //sayıların ters yazımı
+        string cevir="";
+        for (int a = 0; a < label2.Text.Length; a++)
+        {
+            cevir = label2.Text.Substring(a, 1) + cevir;
+        }
+        //ikilikten onluk çevirme
         tekrar:
             string say = label2.Text;
             foreach (char basamak in say)
@@ -95,6 +102,7 @@ namespace json_dosya_okuma_ve_2li_sistemden_10luk_sayıya_cevirme
             //temizle butonu
             label1.Text = "";
             label2.Text = "";
+            label6.Text = "";
         }
     }
 }

@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.formId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.formName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.readAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.writeAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,10 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.formId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.formName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.readAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.writeAccess = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +61,39 @@
             this.dataGridView1.Size = new System.Drawing.Size(646, 527);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // formId
+            // 
+            this.formId.HeaderText = "formId";
+            this.formId.MinimumWidth = 6;
+            this.formId.Name = "formId";
+            this.formId.ReadOnly = true;
+            this.formId.Visible = false;
+            this.formId.Width = 125;
+            // 
+            // formName
+            // 
+            this.formName.HeaderText = "Form Adı";
+            this.formName.MinimumWidth = 6;
+            this.formName.Name = "formName";
+            this.formName.ReadOnly = true;
+            this.formName.Width = 125;
+            // 
+            // readAccess
+            // 
+            this.readAccess.HeaderText = "Okuma Yetkisi";
+            this.readAccess.MinimumWidth = 6;
+            this.readAccess.Name = "readAccess";
+            this.readAccess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.readAccess.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.readAccess.Width = 125;
+            // 
+            // writeAccess
+            // 
+            this.writeAccess.HeaderText = "Yazma Yetkisi";
+            this.writeAccess.MinimumWidth = 6;
+            this.writeAccess.Name = "writeAccess";
+            this.writeAccess.Width = 125;
             // 
             // button1
             // 
@@ -139,39 +172,6 @@
             this.label6.Size = new System.Drawing.Size(0, 25);
             this.label6.TabIndex = 12;
             // 
-            // formId
-            // 
-            this.formId.HeaderText = "formId";
-            this.formId.MinimumWidth = 6;
-            this.formId.Name = "formId";
-            this.formId.ReadOnly = true;
-            this.formId.Visible = false;
-            this.formId.Width = 125;
-            // 
-            // formName
-            // 
-            this.formName.HeaderText = "Form Adı";
-            this.formName.MinimumWidth = 6;
-            this.formName.Name = "formName";
-            this.formName.ReadOnly = true;
-            this.formName.Width = 125;
-            // 
-            // readAccess
-            // 
-            this.readAccess.HeaderText = "Okuma Yetkisi";
-            this.readAccess.MinimumWidth = 6;
-            this.readAccess.Name = "readAccess";
-            this.readAccess.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.readAccess.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.readAccess.Width = 125;
-            // 
-            // writeAccess
-            // 
-            this.writeAccess.HeaderText = "Yazma Yetkisi";
-            this.writeAccess.MinimumWidth = 6;
-            this.writeAccess.Name = "writeAccess";
-            this.writeAccess.Width = 125;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,7 +188,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Sayı Çevrimi";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
